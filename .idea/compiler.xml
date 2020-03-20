@@ -6,12 +6,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="multithreading" />
         <module name="streams" />
         <module name="optional" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="stream" target="1.5" />
-    </bytecodeTargetLevel>
   </component>
 </project>
