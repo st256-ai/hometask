@@ -13,6 +13,8 @@
         <module>stream</module>
         <module>streams</module>
         <module>multithreading</module>
+        <module>factory</module>
+        <module>comparable</module>
     </modules>
 
 
