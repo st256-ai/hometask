@@ -1,3 +1,5 @@
+package main.java;
+import java.io.IOException;
 import java.util.function.Consumer;
 
 public class Main {
@@ -16,8 +18,12 @@ public class Main {
 
     private static <T> Consumer<T> wrap(ConsumerWrapper<T, Exception> consumerWrapper) {
         return i -> {
-            //todo add implementation, an exception is caught and prints to console error code
+            //(done)todo add implementation, an exception is caught and prints to console error code
+            try {
+                consumerWrapper.accept();
+            } catch (IOException e) {
+                System.out.println(e.getMessage());
+            }
         };
     }
 
-}
